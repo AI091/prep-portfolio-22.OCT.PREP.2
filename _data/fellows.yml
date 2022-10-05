@@ -1,15 +1,6 @@
-- name: Will
+- name: Ahmed Ibrahem 
   img: logo.jpg
   location: London, UK
-
-- name: Amanda
-  img: amanda.jpg
-  location: New York City, USA
-
-- name: Aaron
-  img: aaron.jpg
-  location: London, UK
-
-- name: Swift
-  img: swift.jpg
-  location: New York City, USA
+  commits: 0 
+  issues : 0 
+  github : https://github.com/AI091/prep-portfolio-22.OCT.PREP.2/edit/main/_data/fellows.yml
