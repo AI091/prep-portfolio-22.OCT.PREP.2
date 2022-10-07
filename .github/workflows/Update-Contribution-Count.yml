@@ -56,7 +56,7 @@ jobs:
     - uses: fabasoad/yaml-json-xml-converter-action@main
       id: jsontoyaml
       with:
-        path: 'temp.json'
+        path: 'output.json'
         from: 'json'
         to: 'yaml'
     - run: echo '${{steps.jsontoyaml.outputs.data}}' > _data/fellows.yml
