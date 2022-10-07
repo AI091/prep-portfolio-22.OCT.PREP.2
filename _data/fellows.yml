@@ -1,6 +1,9 @@
-- name: Will
-  img: logo.jpg
-  location: London, UK
-  github : https://github.com/AI091
-  commits: 0 
-  issues : 0 
+---
+  - 
+    name: "Will"
+    img: "logo.jpg"
+    location: "London, UK"
+    github: "https://github.com/AI091"
+    commits: 1
+    issues: 0
+
