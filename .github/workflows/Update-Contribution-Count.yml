@@ -37,8 +37,8 @@ jobs:
         token: ${{ secrets.GITHUB_TOKEN }}
         script: | 
           //The JS code to update the json file 
-          const fellowsInfo= ${{ steps.yamltojson.outputs.data }};
-          const contributor = fellowsInfo.filter((fellow) => {
+          const fellows= ${{ steps.yamltojson.outputs.data }};
+          const contributor = fellows.filter((fellow) => {
             return fellow.github.split('/').pop() === context.payload.sender.login;
           })[0];
           if(contributor){
@@ -50,10 +50,9 @@ jobs:
               contributor['issues'] += 1;
             }
           }
-          return fellowsInfo;
+          return fellows;
           
-    - run: echo '${{steps.increment-count.outputs.result}}' > temp.json
-    - run: tail temp.json
+    - run: echo '${{steps.increment-count.outputs.result}}' > output.json
     - uses: fabasoad/yaml-json-xml-converter-action@main
       id: jsontoyaml
       with:
