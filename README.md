@@ -16,7 +16,7 @@ This is a Jekyll website template designed for Prep Fellows.
 Head to `_data` and fill out either `projects.yml`, `experience.yml` and `education.yml`.
 
 Project example.
-```yaml
+```yaml 
 - title: Online Shopping Application
   event: MLH Prep - Batch 4.5
   date: Fall 2021
@@ -24,7 +24,7 @@ Project example.
 
 Experience example.
 ```yaml
-- role: MLH Prep Fellow
+- role: MLH Prep  Fellow
   company: MLH Fellowship
   dates: Summer 2021
   logo: fellowship.svg
