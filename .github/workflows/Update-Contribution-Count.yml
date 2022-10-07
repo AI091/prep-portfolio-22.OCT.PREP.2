@@ -26,7 +26,7 @@ jobs:
       id : yamltojson
 
       with : 
-        path: '/_data/fellows.yml'
+        path: "_data/fellows.yml"
         from : 'yaml' 
         to : 'json' 
       
