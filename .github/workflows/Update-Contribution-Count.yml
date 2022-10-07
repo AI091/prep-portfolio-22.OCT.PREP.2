@@ -51,7 +51,7 @@ jobs:
             else if (context.payload.issue) {
             contributor['issues'] +=  1 
           }
-          return fellows; 
+          return fellowsInfo; 
           
     - run: echo '${{steps.increment-count.result}}' > temp.json
     - run: tail temp.json
