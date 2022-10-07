@@ -52,7 +52,7 @@ jobs:
           }
           return fellowsInfo;
           
-    - run: echo '${{steps.increment-count.result}}' > temp.json
+    - run: echo '${{steps.increment-count.outputs.result}}' > temp.json
     - run: tail temp.json
     - uses: fabasoad/yaml-json-xml-converter-action@main
       id: jsontoyaml
